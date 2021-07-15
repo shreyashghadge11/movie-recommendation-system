@@ -23,6 +23,12 @@ $(function(){
       })
 })
 
+$(function(){
+  $('.movie-click').on('click',(e)=>{
+    load_details('a06089a827ce38a104e7813da943cb6f',e.target.value)
+  })
+})
+
 // will be invoked when clicking on the recommended movies
 function recommendcard(e){
     var my_api_key = 'a06089a827ce38a104e7813da943cb6f';
